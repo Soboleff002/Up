@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы - Ремонт техники</title>
+   <link rel="stylesheet" href="assets/css/styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Ремонт техники <span class="highlight">DROID</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li class="current"><a href="about.html">Отзывы</a></li>
+                    <li><a href="contact.html">Оставить заявку</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+      <section id="reviews">
+            <div class="container">
+                <h1>Отзывы о нашей работе</h1>
+                <div class="review">
+                    <h3>Иван Иванов</h3>
+                    <p class="rating">★★★★★</p>
+                    <p>Отличный сервис! Мастер профессиональный и приветливый. Быстро и качественно починили мой ноутбук.</p>
+                </div>
+                <div class="review">
+                    <h3>Петр Петров</h3>
+                    <p class="rating">★★★★☆</p>
+                    <p>Хороший сервис, но мастер не очень доброжелателен. Ноутбук починили быстро, но вот сдача вышла немного дороже, чем обещали.</p>
+                </div>
+                <!-- Добавьте здесь больше отзывов -->
+<div class="review-form">
+                    <h2>Оставить отзыв</h2>
+                    <form action="submit_review.php" method="post">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="rating">Оценка:</label>
+                        <select id="rating" name="rating" required>
+                            <option value="">Выберите оценку</option>
+                            <option value="1">1 звезда</option>
+                            <option value="2">2 звезды</option>
+                            <option value="3">3 звезды</option>
+                            <option value="4">4 звезды</option>
+                            <option value="5">5 звезд</option>
+                        </select>
+
+                        <label for="review">Отзыв:</label>
+                        <textarea id="review" name="review" required="" style="height: 163px; width: 1119px;"></textarea>
+                        <input type="submit" value="Отправить отзыв">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <a href="mailto:info@example.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://vk.com/example" target="_blank"><i class="fab fa-vk"></i></a>
+            <a href="https://t.me/example_channel" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+            <a href="tel:+71234567890"><i class="fas fa-phone"></i></a>
+            <p>г. Москва, ул. Пушкина, д. 10 </p>
+        </div>
+        <h1>Ремонт техники, Copyright &copy; 2024</p>
+    </footer>
+
+    <!-- Добавьте здесь ваши скрипты JavaScript -->
+</body>
+</html>
