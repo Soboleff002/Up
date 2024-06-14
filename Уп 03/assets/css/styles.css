@@ -72,13 +72,13 @@ header a:hover {
 
 footer {
     background: #333;
-    color: white;
+    color: rgb(177, 172, 172);
     padding: 20px;
     margin-top: auto;
 }
 
 footer a {
-    color: white;
+    color: rgb(177, 172, 172);
     margin: 0 10px;
     text-decoration: none;
 }
@@ -89,8 +89,4 @@ footer a:hover {
 
 footer .fas, footer .fab {
     font-size: 30px; /* Размер иконки */
-}
-
-footer h1 {
-    text-align: center;
 }
